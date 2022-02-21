@@ -2,6 +2,22 @@
   text-align: center;
 }
 
+
+.body{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+}
+
+.dashboardspace {
+  width: 1024px;
+  height: 100%;
+  display: flex;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -37,7 +53,3 @@
   }
 }
 
-.logo {
-  width: 25px;
-  length: 25px;
-}

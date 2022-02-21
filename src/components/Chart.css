@@ -1,0 +1,20 @@
+.chart {
+    border: 1px solid orange;
+    flex: 0.7;
+}
+
+
+
+.graphic__price {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.graphic__price h1 {
+    margin: 0;
+}
+
+.graphic__price p {
+    margin-top:0;
+
+}

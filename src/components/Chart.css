@@ -1,5 +1,4 @@
 .chart {
-    border: 1px solid orange;
     flex: 0.7;
 }
 
@@ -17,4 +16,9 @@
 .graphic__price p {
     margin-top:0;
 
+}
+
+.graphic__chart {
+    display: flex;
+    flex-direction: column;
 }

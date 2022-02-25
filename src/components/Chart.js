@@ -11,7 +11,7 @@ function Chart() {
                 <p>amount changed today</p>
             </div>
             <div className = "graphic__chart">
-              {/* <Linegraph /> */}
+              <Linegraph />
               Test
             </div>
         </div>

@@ -1,10 +1,10 @@
 import React from "react";
 import './StatsRow.css';
-// import StockChart from './stock.svg'
+import StockSVG from './stock.svg'
 
 function StatsRow(props) {
   //   console.log(props, "what is in props here?");
-// (currentPrice - openPrice)/openPrice
+// (currentPrice - openPrice)/openPrice 
   const percentage = ((props.price - props.openPrice)/props.openPrice) * 100;
 
   const getModal = () => {
@@ -18,11 +18,11 @@ function StatsRow(props) {
     
       </div>
       <div className="row__chart">
-        {/* <img src={StockChart} height={16}/> */}
+        <img src={StockSVG} height={16}/>
       </div>
       <div className="row__numbers">
-        <p className="row__price">$200</p>
-        <p className="row__percentage">+200%</p>
+        <p className="row__price">{props.price}$200</p>
+        <p className="row__percentage">{Number(percentage).toFixed(2)}%+200%</p>
       </div>
     </div>
   );

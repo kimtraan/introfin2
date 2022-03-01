@@ -40,9 +40,8 @@ import {
           }
         ]
       };
+
 function Linegraph() {
-
-
         return (
             <div className="App">
               <Line data={data} />

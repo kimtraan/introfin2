@@ -3,8 +3,11 @@ import './App.css';
 import Header from './components/Header';
 import Chart from './components/Chart';
 import Stats from './components/Stats';
+import { useState } from 'react';
+import { nanoid } from 'nanoid';
 import { Line } from "react-chartjs-2";
 // import {CategoryScale} from 'react-chartjs-2';
+import Noteslist from './components/Noteslist'
 
 import {
   Chart as ChartJS,
@@ -31,6 +34,40 @@ import {
 
 
 function App() {
+  const [notes,setNotes] = useState([
+      {
+        id: nanoid(),
+        text: "This is my first note!",
+        date: "15/04/2021",
+      },
+      {
+        id: nanoid(),
+        text: "This is my second note!",
+        date: "15/04/2021",
+      },
+      {
+        id: nanoid(),
+        text: "This is my third note!",
+        date: "15/04/2021",
+      },
+      {
+        id: nanoid(),
+        text: "This is my third note!",
+        date: "15/04/2021",
+      }
+
+]);
+const addNote = (text) => {
+   const date = new Date();
+   const newNote = {
+     id: nanoid(),
+     text: text,
+     date: date.toLocaleDateString() 
+   }
+   const newNotes = [...notes, newNote];
+   setNotes(newNotes);
+
+}
   return (
     <div className="App">
       {/*Header */}
@@ -45,8 +82,11 @@ function App() {
           {/* <Line data={data} /> */}
           <Stats/>
       </div>
-
     </div>  
+    <div className = "stickyNotes">
+        Sticky Notes
+        <Noteslist notes = {notes} handleAddNote={addNote}/>
+      </div>
     </div>
   );
 }

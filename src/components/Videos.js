@@ -12,13 +12,15 @@ function Videos() {
   return (
     <div>
       <Header/>
-{/* navbar */}
-{/* contianer that has Videos
-use embed
-implement sticky notes */}
-hello
 
+    <div className = 'vidcontainer'>
+      <div className = 'container2'>
+        <h1>Popular Youtube Financial Gurus</h1>
+
+        </div>
+    </div>  
     </div>
+
   )
 }
 

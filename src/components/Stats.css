@@ -3,6 +3,7 @@
     background-color: rgb(245, 244, 237);
     flex: 0.3;
     flex-shrink: 0;
+    padding-left: 10px;
 }
 
 .stats_contain {

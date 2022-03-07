@@ -77,6 +77,9 @@ function App() {
       }
 
 ]);
+const [searchText, setSearchText] = useState('');
+
+
 const addNote = (text) => {
    const date = new Date();
    const newNote = {
@@ -113,10 +116,10 @@ const deleteNote = (id) => {
     </div>  
     <div className = "stickyNotes">
         <br/>
-        <Notesearch/>
+        <Notesearch handSearchNote= {setSearchText}/>
         <br/>
         <Noteslist 
-          notes = {notes} 
+          notes = {notes.filter((note)=> note.text.toLowerCase().includes(searchText))} 
           handleAddNote={addNote}
           handleDeleteNote = {deleteNote}
           />

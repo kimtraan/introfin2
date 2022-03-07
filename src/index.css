@@ -85,5 +85,20 @@ textarea:focus {
 
 
 .search {
-  
+  display: flex;
+  align-items: center;
+  background-color: rgb(243, 243, 243);
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: 1.5em;
+}
+
+.search input {
+  border: none;
+  background-color: rgb(243, 243, 243);
+
+}
+
+.search input:focus{
+  outline: none;
 }

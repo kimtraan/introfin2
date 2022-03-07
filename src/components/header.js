@@ -1,12 +1,22 @@
 import React from 'react'
 import './Header.css'
+import Videos from './Videos'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  Redirect,
+} from "react-router-dom";
 
 function Header() {
   return (
     <div className = 'navbar'>
+      
+      {/* <Router> */}
         {/**logo */}
         <div className = 'logo' >
-        <img src='dumplinglogo.png' width={40}></img>
+       < a href='/'> <img  src='dumplinglogo.png'  width={40}></img></a>
         </div>  
         <div className = 'searchbar'>
             <div className = 'h_searchcontainer'>
@@ -14,11 +24,18 @@ function Header() {
             </div>
         </div>
         <div className = 'navbaritems'>
-            < a href= '#'>VIDEOS</a>
-            < a href= '#'>MY NOTES</a>
+        < a href= '/videos'>VIDEOS</a>
+        {/* Videos */}
+        {/* <Routes>
+        
+        <Route path="/videos" component={Videos}>Videos</Route>
+
+            {/* < a href= '#'>MY NOTES</a>  */}
+            {/* {/* <Route path ="/Videos" exact component = {Videos}/> */}
+          {/* </Routes> */}
         </div>  
        
-
+        {/* </Router> */}
     </div>
   )
 }

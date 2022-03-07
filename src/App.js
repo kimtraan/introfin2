@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Notesearch from './components/notesearch'
 import Header from './components/Header';
 import Chart from './components/Chart';
 import Stats from './components/Stats';
@@ -8,6 +9,15 @@ import { nanoid } from 'nanoid';
 import { Line } from "react-chartjs-2";
 // import {CategoryScale} from 'react-chartjs-2';
 import Noteslist from './components/Noteslist'
+import Videos from './components/Videos';
+import ReactDOM from 'react-dom';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Link,
+  Redirect,
+} from "react-router-dom";
 
 import {
   Chart as ChartJS,
@@ -31,7 +41,17 @@ import {
   );
 
 
+export default function Router() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path = "/" element= {<App/>} />
+        <Route path = "/videos" element={<Videos/>} />
+      </Routes>
+    </BrowserRouter>
+  )
 
+}
 
 function App() {
   const [notes,setNotes] = useState([
@@ -66,8 +86,16 @@ const addNote = (text) => {
    }
    const newNotes = [...notes, newNote];
    setNotes(newNotes);
+ }
 
+const deleteNote = (id) => {
+  const newNotes = notes.filter((note) => note.id !== id );
+  setNotes(newNotes);
 }
+
+
+
+
   return (
     <div className="App">
       {/*Header */}
@@ -84,11 +112,18 @@ const addNote = (text) => {
       </div>
     </div>  
     <div className = "stickyNotes">
-        Sticky Notes
-        <Noteslist notes = {notes} handleAddNote={addNote}/>
+        <br/>
+        <Notesearch/>
+        <br/>
+        <Noteslist 
+          notes = {notes} 
+          handleAddNote={addNote}
+          handleDeleteNote = {deleteNote}
+          />
+          
       </div>
     </div>
   );
 }
 
-export default App;
+// export default App;

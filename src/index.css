@@ -13,6 +13,7 @@ code {
 }
 
 .stickyNotes{
+  padding-top: 20px;
   max-width: 960px;
   margin-right: auto;
   margin-left: auto;
@@ -29,7 +30,7 @@ code {
 
 .note {
   display: flex;
-  background-color: rgb(218, 196, 169);
+  background-color: rgb(209, 233, 252);
   margin-bottom: 10px;
   border-radius: 10px;
   padding: 1rem;
@@ -47,14 +48,14 @@ code {
 
 
 .note.new {
-  background-color:rgb(118, 175, 158);
+  background-color:rgb(217, 241, 234);
   
 }
 
 textarea {
   border: none;
   resize: none;
-  background-color:rgb(118, 175, 158);
+  background-color:rgb(217, 241, 234);
 }
 
 textarea:focus {
@@ -78,3 +79,11 @@ textarea:focus {
 
 
 
+.delete-icon {
+  cursor: pointer;
+}
+
+
+.search {
+  
+}

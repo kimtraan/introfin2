@@ -1,0 +1,144 @@
+.tfdbtn {
+    margin-left: 50px;
+}
+h3 {
+    /* padding-left: 10px; */
+    font-family: 'Nunito', sans-serif;
+    padding-left: 30px;
+    font-size: 1.2vw;
+    display: flex;
+    justify-content: center;
+}
+
+/* h4 {
+    padding-left: 50px;
+} */
+    
+.p {
+    padding-left: 50px;
+}
+
+.tfd, .para {
+    padding-left: 50px;
+    font-size: 1.2vw;
+
+
+}
+
+
+
+.youtubeembed {
+    /* display: flex; */
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(225, 235, 231);
+    /* flex-direction: column; */
+    margin: 30px 30px 30px 30px;
+    border-radius: 10px;
+
+}
+
+.tfd {
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+
+.vid2 {
+    /* display: flex; */
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 20px;
+    background-color: rgb(225, 235, 231);
+    border-radius: 15px;
+    padding-bottom: 20px;
+
+
+}
+
+.vid1 {
+    /* display: flex; */
+    /* justify-content: start ; */
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+
+.vid1text {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+
+
+.vid1a {
+    justify-content: space-between;
+    border-radius: 15px;
+}
+
+
+
+
+.vid2text {
+    padding-left: 50px;
+    padding-top: 20px;
+    margin-right: 50px;
+
+}
+
+/* .h4 {
+    margin-left: 50px;
+} */
+
+.vid2contain{
+    border-radius: 15px;
+    padding-left: 50px;
+    padding-top: 20px;
+
+}
+
+.vid3 {
+    display: flex;
+    margin-left: 30px;
+    padding-left: 40px;
+    margin-top: 30px;
+    padding-top: 30px;
+    background-color: rgb(225, 235, 231);
+    flex-direction: column;
+    border-radius: 15px;
+    margin-right: 30px;
+  
+}
+
+.vid3v {
+    border-radius: 15px;
+    padding-bottom: 20px;
+}
+
+.rbff{
+    margin-left: 50px;
+    /* border-radius: 15px; */
+    width: 500px;
+    /* background-color: rgb(204, 207, 228); */
+    height: 200px;
+    font-weight: bold;
+    margin-bottom: 20px;
+} 
+.GH {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.rosebtn {
+    padding-bottom: 10px;
+}
+
+.para {
+    margin-right: 50px;
+}
+
+.GHprof {
+    padding-bottom: 30px;
+}
+

@@ -12,7 +12,20 @@ function Chart() {
             </div>
             <div className = "graphic__chart">
               <Linegraph />
-              Test
+              <div className = 'timeLabels'>
+                < div className='month'>
+                  Month 
+                </div>
+                <div className='year'>
+                   Year  
+                </div>
+                <div className='5year'>
+                 5 Year  
+                </div>
+                <div className = 'allTime'>
+                All Time  
+                </div>
+              </div>
             </div>
         </div>
     </div>

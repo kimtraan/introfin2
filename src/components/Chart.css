@@ -2,6 +2,16 @@
     flex: 0.7;
 }
 
+.timeLabels {
+    padding-left: 20px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    width: 500px;
+    
+}
+
 
 
 .graphic__price {
@@ -21,3 +31,18 @@
 .graphic__chart {
     width: 100%
 }
+
+
+.timeLabels {
+    font-size: 1vw;
+}
+
+.month:hover, .year:hover, .fyear:hover, .allTime:hover {
+    font-weight: bold;
+    background-color: blanchedalmond;
+    /* outline: 30px blanchedalmond; */
+    cursor: pointer;
+}
+
+
+

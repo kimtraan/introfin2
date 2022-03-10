@@ -57,26 +57,22 @@ function App() {
   const [notes,setNotes] = useState([
       {
         id: nanoid(),
-        text: "This is my first note!",
+        text: "Add note on videos that you are watching",
         date: "15/04/2021",
       },
       {
         id: nanoid(),
-        text: "This is my second note!",
+        text: "Or add notes from trends you are noticing on stock tickers",
         date: "15/04/2021",
       },
       {
         id: nanoid(),
-        text: "This is my third note!",
-        date: "15/04/2021",
-      },
-      {
-        id: nanoid(),
-        text: "This is my third note!",
+        text: "Save and delete as you please!",
         date: "15/04/2021",
       }
 
 ]);
+
 const [searchText, setSearchText] = useState('');
 
 

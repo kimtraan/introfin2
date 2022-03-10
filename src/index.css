@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(255, 255, 255);
 }
 
 code {
@@ -64,10 +65,11 @@ textarea:focus {
 }
 
 .save {
-  background-color: gray;
+  background-color: rgb(117, 175, 132);
   border: none;
   border-radius: 15px;
   padding: 5px 10px 5px 10px;
+  color: white
 }
 
 .save:hover{
@@ -91,6 +93,7 @@ textarea:focus {
   padding: 5px;
   border-radius: 10px;
   margin-bottom: 1.5em;
+  /* width: 200px; */
 }
 
 .search input {

@@ -4,6 +4,7 @@ import Header from './Header'
 import Paper from '@mui/material/Paper';
 import Button from '@mui/material/Button'
 import Card from '@mui/material/Card';
+import Noteslist from './Noteslist';
 import {
   BrowserRouter as Router,
   Routes,
@@ -43,8 +44,12 @@ function Videos() {
                variant="contained"
                style = {{backgroundColor: '#94B3A8'}}
                >Go To Rose's Channel
-               
                </Button>
+               {/* <Noteslist 
+          notes = {notes.filter((note)=> note.text.toLowerCase().includes(searchText))} 
+          handleAddNote={addNote}
+          handleDeleteNote = {deleteNote}
+          /> */}
               </div>
           </div>  
         </div>
@@ -113,14 +118,37 @@ function Videos() {
                a href = 'https://www.yourrichbff.com/' target="_blank" 
                className = 'tfdbtn' 
                variant="contained"
-               style = {{backgroundColor: '#94B3A8'}}
+               style = {{backgroundColor: '#B9D4E1'}}
                >Your Rich BFF
                
                </Button>
           {/* </div> */}
-  
+          <br/>
+          <br/>
+          <Button  
+               a href = 'https://tinyurl.com/2tmsnree' target="_blank" 
+               className = 'investopedia' 
+               variant="contained"
+               style = {{backgroundColor: '#B9D4E1'}}
+               >Investopedia
+               
+               </Button>
+               <br/>
+               <br/>
+          <Button  
+               a href = 'https://www.ncua.gov/consumers/financial-literacy-resources' target="_blank" 
+               className = 'NCUAResources' 
+               variant="contained"
+               style = {{backgroundColor: '#B9D4E1'}}
+               >NCUA Resources
+               
+               </Button>
+
+
+
 
         </div>
+        
  
 
     </div>

@@ -6,6 +6,7 @@ import Chart from './components/Chart';
 import Stats from './components/Stats';
 import { useState } from 'react';
 import { nanoid } from 'nanoid';
+import Howto from './components/howto'
 import { Line } from "react-chartjs-2";
 // import {CategoryScale} from 'react-chartjs-2';
 import Noteslist from './components/Noteslist'
@@ -40,6 +41,7 @@ import {
   Legend
   );
 
+// add an about page 
 
 export default function Router() {
   return (
@@ -47,6 +49,7 @@ export default function Router() {
       <Routes>
         <Route path = "/" element= {<App/>} />
         <Route path = "/videos" element={<Videos/>} />
+        <Route path = '/tutorial' element = {<Howto/>}/>
       </Routes>
     </BrowserRouter>
   )

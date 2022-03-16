@@ -1,6 +1,11 @@
 .tfdbtn {
     margin-left: 50px;
 }
+
+.tfdbtn {
+    color: rgb(78, 78, 124);
+}
+
 h3 {
     /* padding-left: 10px; */
     font-family: 'Nunito', sans-serif;
@@ -21,11 +26,11 @@ h3 {
 .tfd, .para {
     padding-left: 50px;
     font-size: 1.2vw;
-
-
 }
 
-
+.investopedia {
+    padding-left: 20px
+}
 
 .youtubeembed {
     /* display: flex; */
@@ -64,6 +69,7 @@ h3 {
     padding-top: 20px;
     padding-bottom: 50px;
 }
+
 
 
 .vid1text {
@@ -124,7 +130,7 @@ h3 {
     /* background-color: rgb(204, 207, 228); */
     height: 200px;
     font-weight: bold;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 } 
 .GH {
     font-weight: bold;

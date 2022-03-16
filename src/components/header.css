@@ -1,3 +1,20 @@
+
+
+a:link{
+    text-decoration: none!important;
+  }
+
+a:visited { 
+    text-decoration: none; 
+    color: #556b4d;
+}
+
+a:hover {
+    color: #212b1d;
+}
+.tutorial {
+    padding-left: 20px;
+}
 .navbaritems {
     display: flex;
     justify-content: flex-end;
@@ -8,6 +25,7 @@
     margin-right: 50px;
     margin-left: 700px;
     padding: 0 20px;  
+    flex-direction: row;
 }
 .navbar {
     display:flex;
@@ -54,18 +72,6 @@
 
 
 
-a:link{
-    text-decoration: none!important;
-  }
-
-a:visited { 
-    text-decoration: none; 
-    color: #556b4d;
-}
-
-a:hover {
-    color: #212b1d;
-}
 
 @media only screen and (min-width: 414px) {
     html {

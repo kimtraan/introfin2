@@ -33,6 +33,7 @@ function Header() {
         </div>
         <div className = 'navbaritems'>
         < a href= '/videos'>VIDEOS</a>
+        < a href = '/tutorial' className ='tutorial'> TUTORIAL </a>
         {/* Videos */}
         {/* <Routes>
         
